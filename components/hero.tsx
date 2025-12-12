@@ -92,7 +92,12 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="flex justify-center animate-bounce">
+        <div
+          className="flex justify-center animate-bounce cursor-pointer"
+          onClick={() => {
+            document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+          }}
+        >
           <ChevronDown size={32} className="text-primary" />
         </div>
       </div>
