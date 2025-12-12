@@ -8,18 +8,49 @@ import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
-    setFormData({ name: "", email: "", message: "" })
+    setLoading(true)
+    setError("")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message")
+      }
+
+      setSubmitted(true)
+      setFormData({ name: "", email: "", message: "" })
+      setTimeout(() => setSubmitted(false), 5000)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send message. Please try again.")
+      setTimeout(() => setError(""), 5000)
+    } finally {
+      setLoading(false)
+    }
   }
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "jessersekry@gmail.com", href: "mailto:jessersekry@gmail.com" },
     { icon: Phone, label: "Phone", value: "+216 2980 3595", href: "tel:+21629803595" },
-    { icon: MapPin, label: "Location", value: "Ariana, Tunis, Tunisia", href: "#" },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Ariana, Tunis, Tunisia",
+      href: "https://www.google.com/maps/search/?api=1&query=Ariana,+Tunis,+Tunisia",
+    },
   ]
 
   return (
@@ -91,6 +122,7 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                 placeholder="Your name"
+                disabled={loading}
               />
             </div>
 
@@ -103,6 +135,7 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                 placeholder="your@email.com"
+                disabled={loading}
               />
             </div>
 
@@ -115,20 +148,28 @@ export default function Contact() {
                 rows={5}
                 className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
                 placeholder="Your message..."
+                disabled={loading}
               />
             </div>
 
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg transition-all neon-glow flex items-center justify-center gap-2"
+              disabled={loading}
+              className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg transition-all neon-glow flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Send size={20} />
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
 
             {submitted && (
               <div className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-center animate-fade-in">
-                ✓ Message sent successfully!
+                Message sent successfully!
+              </div>
+            )}
+
+            {error && (
+              <div className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-400 text-center animate-fade-in">
+                {error}
               </div>
             )}
           </form>
