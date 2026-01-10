@@ -14,12 +14,12 @@ const Navbar = ({ isDark = true, onToggleTheme }: NavbarProps) => {
 
   const handleDownloadCV = async () => {
     try {
-      const response = await fetch("/CV JESSER_SAKRI.pdf")
+      const response = await fetch("/CV JESSER Sakri.pdf")
       const blob = await response.blob()
       const url = window.URL.createObjectURL(new Blob([blob], { type: "application/pdf" }))
       const link = document.createElement("a")
       link.href = url
-      link.download = "CV JESSER_SAKRI.pdf"
+      link.download = "CV-JESSER-SAKRI.pdf"
       document.body.appendChild(link)
       link.click()
       link.parentNode?.removeChild(link)
