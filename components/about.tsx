@@ -26,23 +26,32 @@ export default function About() {
           {/* About Text */}
           <div className="space-y-6 animate-slide-in-right">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm Jesser Sakri, a passionate Fullstack Web/Mobile Developer who loves building high-performance
-              applications with modern JavaScript technologies like React, Node.js, and TypeScript.
+              I'm Jesser Sakri, a Full-Stack JavaScript Developer specializing in building scalable web and mobile applications using React, TypeScript, Node.js, and MongoDB. I'm passionate about creating high-performance applications with modern technologies and best practices.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With a strong foundation in both frontend and backend development, I create seamless user experiences
-              backed by robust server-side logic. I'm particularly interested in AI-powered applications and real-time
-              collaboration features.
+              With strong expertise in both frontend and backend development, I design secure RESTful APIs, implement real-time systems with Socket.IO, and deliver production-ready solutions. I'm particularly interested in clean architecture, performance optimization, and AI-powered applications.
             </p>
 
-            <div className="pt-4">
-              <h3 className="text-xl font-semibold mb-4">Education</h3>
-              <div className="glass rounded-lg p-4">
-                <p className="font-semibold text-primary">
-                  Licentiate Degree in Web and Multimedia Application Development
-                </p>
-                <p className="text-muted-foreground">ISET Sidi Bouzid (2021–2024)</p>
+            <div className="space-y-4 pt-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Education</h3>
+                <div className="glass rounded-lg p-4">
+                  <p className="font-semibold text-primary">
+                    Licentiate Degree in Web & Multimedia Development
+                  </p>
+                  <p className="text-muted-foreground">ISET Sidi Bouzid (2021–2024)</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Certifications</h3>
+                <div className="glass rounded-lg p-4">
+                  <p className="font-semibold text-primary">
+                    Internship Completion Certificate
+                  </p>
+                  <p className="text-muted-foreground">ReBootKamp Tunisia (September 2025)</p>
+                </div>
               </div>
             </div>
           </div>
