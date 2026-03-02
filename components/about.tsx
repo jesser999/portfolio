@@ -26,14 +26,16 @@ export default function About() {
           {/* About Text */}
           <div className="space-y-6 animate-slide-in-right">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm Jesser Sakri, a passionate Fullstack Web/Mobile Developer who loves building high-performance
-              applications with modern JavaScript technologies like React, Node.js, and TypeScript.
+              Full-Stack JavaScript Developer with experience building scalable web and mobile applications using React,
+              TypeScript, Node.js, and MongoDB. I specialize in designing secure RESTful APIs, implementing real-time
+              systems with Socket.IO, and delivering production-ready applications.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With a strong foundation in both frontend and backend development, I create seamless user experiences
-              backed by robust server-side logic. I'm particularly interested in AI-powered applications and real-time
-              collaboration features.
+              I have a strong understanding of clean architecture, performance optimization, and the full software
+              development lifecycle. With expertise in both frontend and backend development, I create seamless user
+              experiences backed by robust server-side logic. I'm particularly interested in AI-powered applications and
+              real-time collaboration features.
             </p>
 
             <div className="pt-4">

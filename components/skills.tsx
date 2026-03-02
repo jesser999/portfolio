@@ -7,18 +7,20 @@ export default function Skills() {
   const [activeTab, setActiveTab] = useState("technical")
 
   const technicalSkills = [
-    { name: "JavaScript", icon: "⚡" },
+    { name: "JavaScript (ES6+)", icon: "⚡" },
     { name: "TypeScript", icon: "📘" },
-    { name: "React", icon: "⚛️" },
+    { name: "React.js", icon: "⚛️" },
     { name: "React Native", icon: "📱" },
+    { name: "Next.js", icon: "▲" },
     { name: "Node.js", icon: "🟢" },
     { name: "Express.js", icon: "🚀" },
-    { name: "Next.js", icon: "▲" },
     { name: "MongoDB", icon: "🍃" },
-    { name: "SQL", icon: "🗄️" },
+    { name: "MySQL", icon: "🗄️" },
     { name: "Redux Toolkit", icon: "🔄" },
-    { name: "Socket.io", icon: "🔌" },
-    { name: "HTML/CSS", icon: "🎨" },
+    { name: "Socket.IO", icon: "🔌" },
+    { name: "RESTful APIs", icon: "🌐" },
+    { name: "JWT & RBAC", icon: "🔐" },
+    { name: "HTML5/CSS3", icon: "🎨" },
   ]
 
   const softSkills = [
