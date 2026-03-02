@@ -5,15 +5,27 @@ import { Briefcase, Calendar, MapPin } from "lucide-react"
 export default function Experience() {
   const experiences = [
     {
+      title: "Freelance Full-Stack Developer",
+      company: "Remote",
+      period: "Oct 2025 - Present",
+      location: "Tunisia",
+      description: [
+        "Built scalable full-stack applications using React and Node.js",
+        "Developed secure RESTful APIs with JWT authentication and RBAC",
+        "Optimized performance, SEO, and database queries",
+        "Delivered production-ready solutions for client projects",
+      ],
+    },
+    {
       title: "Web Developer Intern",
       company: "ReBootKamp Tunisia",
       period: "Apr – Sep 2025",
-      location: "Tunisia",
+      location: "Tunis",
       description: [
-        "Built responsive web interfaces using React, TypeScript, and Redux",
-        "Developed REST APIs with Node.js and Express.js",
-        "Managed MongoDB and SQL data with optimized queries",
-        "Worked in Agile teams with GitHub collaboration",
+        "Built responsive web interfaces using React, TypeScript, and Redux Toolkit",
+        "Developed RESTful APIs with Node.js and Express.js",
+        "Worked with MongoDB and MySQL for data management",
+        "Collaborated in Agile teams using Git and GitHub",
       ],
     },
   ]
