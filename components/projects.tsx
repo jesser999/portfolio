@@ -8,8 +8,8 @@ export default function Projects() {
       title: "TaskFlow",
       subtitle: "AI-Powered Smart Team Task Manager",
       description:
-        "An AI-powered project management platform for intelligent task automation and real-time collaboration.",
-      tech: ["React 19", "Node.js", "TypeScript", "MongoDB", "Redux Toolkit", "Socket.io", "Stripe", "PyTorch"],
+        "Enterprise task management platform with JWT authentication, RBAC, real-time collaboration, and intelligent task automation.",
+      tech: ["React 19", "Node.js", "TypeScript", "MongoDB", "Redux Toolkit", "Socket.io", "JWT/RBAC", "PyTorch"],
       image: "/task-management-app.jpg",
       github: "https://github.com/jesser999/TaskFlow-AI-Smart-Team-TaskManager",
       live: "https://github.com/jesser999/TaskFlow-AI-Smart-Team-TaskManager",
@@ -17,8 +17,8 @@ export default function Projects() {
     {
       title: "E-Commerce App",
       subtitle: "Full-Stack Shopping Platform",
-      description: "Responsive e-commerce app with secure RESTful APIs, file uploads, and optimized data performance.",
-      tech: ["ReactJS", "ExpressJS", "NodeJS", "MongoDB", "Multer"],
+      description: "High-performance e-commerce platform with secure RESTful APIs, JWT authentication, file management, and optimized MongoDB queries.",
+      tech: ["React", "Express.js", "Node.js", "MongoDB", "JWT Auth"],
       image: "/ecommerce-platform.jpg",
       github: "https://github.com/jesser999/E-commerce-App-2",
       live: "https://github.com/jesser999/E-commerce-App-2",
@@ -26,8 +26,8 @@ export default function Projects() {
     {
       title: "HealthyConnect",
       subtitle: "Real-Time Health Management Platform",
-      description: "A real-time health management platform with chat, authentication, and notifications.",
-      tech: ["ReactJS", "ExpressJS", "TypeScript", "MySQL", "Socket.IO"],
+      description: "Real-time health platform featuring JWT-secured APIs, role-based access control, live chat, and performant MySQL database queries.",
+      tech: ["React", "Express.js", "TypeScript", "MySQL", "Socket.IO", "JWT/RBAC"],
       image: "/health-app.jpg",
       github: "https://github.com/jesser999/HealthyConnect",
       live: "https://github.com/jesser999/HealthyConnect",
