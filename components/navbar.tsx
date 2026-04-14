@@ -14,7 +14,7 @@ const Navbar = ({ isDark = true, onToggleTheme }: NavbarProps) => {
 
   const handleDownloadCV = async () => {
     try {
-      const response = await fetch("/CV%20JESSER%20Sakri.pdf")
+      const response = await fetch("/Cv Jesser Sakri .pdf")
       const blob = await response.blob()
       const url = window.URL.createObjectURL(new Blob([blob], { type: "application/pdf" }))
       const link = document.createElement("a")
