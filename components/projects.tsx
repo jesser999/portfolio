@@ -10,7 +10,7 @@ export default function Projects() {
       description:
         "Decoupled, real-time polling application with Socket.io for instantaneous voting, Redis for high-performance state management, and Docker containerization for production deployment.",
       tech: ["Next.js 16", "React", "TypeScript", "Express.js", "Socket.io", "Redis", "Docker", "Railway"],
-      image: "/quick-poll-app.jpg",
+      image: "/quick-poll-screenshot.png",
       github: "https://github.com/jesser999/quick-poll",
       live: "https://quickpollapp-production-1c53.up.railway.app/",
     },
