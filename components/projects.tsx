@@ -5,6 +5,16 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "Quick Poll",
+      subtitle: "Real-Time Containerized Voting Application",
+      description:
+        "Decoupled, real-time polling application with Socket.io for instantaneous voting, Redis for high-performance state management, and Docker containerization for production deployment.",
+      tech: ["Next.js 16", "React", "TypeScript", "Express.js", "Socket.io", "Redis", "Docker", "Railway"],
+      image: "/quick-poll-app.jpg",
+      github: "https://github.com/jesser999/quick-poll",
+      live: "https://quickpollapp-production-1c53.up.railway.app/",
+    },
+    {
       title: "TaskFlow",
       subtitle: "AI-Powered Smart Team Task Manager",
       description:
