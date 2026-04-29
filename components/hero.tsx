@@ -5,7 +5,7 @@ import { ChevronDown, Github, Linkedin, Mail } from "lucide-react"
 
 export default function Hero() {
   const [displayedText, setDisplayedText] = useState("")
-  const fullText = "Fullstack JavaScript Developer"
+  const fullText = "Full-Stack JavaScript Developer"
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function Hero() {
           className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in"
           style={{ animationDelay: "0.8s" }}
         >
-          I build intelligent, scalable, and user-friendly web & mobile experiences with modern JavaScript technologies.
+          Specialized in MERN, TypeScript, and Next.js. I deploy containerized microservices via Docker on Railway and manage serverless infrastructure with Neon and Render.
         </p>
 
         <div

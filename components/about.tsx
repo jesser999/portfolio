@@ -26,11 +26,11 @@ export default function About() {
           {/* About Text */}
           <div className="space-y-6 animate-slide-in-right">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm Jesser Sakri, a Full-Stack JavaScript Developer specializing in building scalable web and mobile applications using React, TypeScript, Node.js, and MongoDB. I'm passionate about creating high-performance applications with modern technologies and best practices.
+              I'm a Full-Stack JavaScript Developer specialized in MERN, TypeScript, and Next.js. I have a proven record of deploying containerized microservices via Docker on Railway and managing serverless infrastructure like Neon and Render. I leverage 3 years of CRM experience to bridge technical execution with client goals and project management.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With strong expertise in both frontend and backend development, I design secure RESTful APIs, implement real-time systems with Socket.IO, and deliver production-ready solutions. I'm particularly interested in clean architecture, performance optimization, and AI-powered applications.
+              I design secure RESTful APIs with JWT authentication, implement real-time systems with Socket.IO and WebRTC, and deliver production-ready solutions with DevOps expertise. I'm particularly interested in scalable architecture, performance optimization, and secure infrastructure management.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -48,9 +48,9 @@ export default function About() {
                 <h3 className="text-xl font-semibold mb-4">Certifications</h3>
                 <div className="glass rounded-lg p-4">
                   <p className="font-semibold text-primary">
-                    Internship Completion Certificate
+                    Full-Stack JavaScript Certificate
                   </p>
-                  <p className="text-muted-foreground">ReBootKamp Tunisia (September 2025)</p>
+                  <p className="text-muted-foreground">ReBootKamp Tunisia (Sep 2025)</p>
                 </div>
               </div>
             </div>

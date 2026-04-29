@@ -10,10 +10,11 @@ export default function Experience() {
       period: "Oct 2025 - Present",
       location: "Tunisia",
       description: [
-        "Built scalable full-stack applications using React and Node.js",
-        "Developed secure RESTful APIs with JWT authentication and RBAC",
-        "Optimized performance, SEO, and database queries",
-        "Delivered production-ready solutions for client projects",
+        "Build scalable full-stack applications with React 19, Next.js, and Node.js",
+        "Deploy containerized microservices via Docker on Railway and Render",
+        "Manage serverless infrastructure with Neon PostgreSQL and Vercel",
+        "Develop secure RESTful APIs with JWT (HTTP-only), Helmet.js, and Bcrypt",
+        "Implement real-time features with Socket.io and WebRTC",
       ],
     },
     {
@@ -22,10 +23,11 @@ export default function Experience() {
       period: "Apr – Sep 2025",
       location: "Tunis",
       description: [
-        "Built responsive web interfaces using React, TypeScript, and Redux Toolkit",
-        "Developed RESTful APIs with Node.js and Express.js",
-        "Worked with MongoDB and MySQL for data management",
-        "Collaborated in Agile teams using Git and GitHub",
+        "Developed full-stack applications using React 19, TypeScript, Node.js, and Express.js v5",
+        "Built secure authentication systems with JWT and Bcrypt hashing",
+        "Managed databases with PostgreSQL (Neon) and MongoDB using Prisma ORM",
+        "Implemented real-time features with Socket.io and WebRTC for communication apps",
+        "Deployed applications on Vercel, Railway, and Render with CI/CD pipelines",
       ],
     },
   ]
