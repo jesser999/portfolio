@@ -35,12 +35,13 @@ export default function Projects() {
     },
     {
       title: "HealthyConnect",
-      subtitle: "Real-Time Health Management Platform",
-      description: "A real-time health management platform with chat, authentication, and notifications.",
-      tech: ["ReactJS", "ExpressJS", "TypeScript", "MySQL", "Socket.IO"],
+      subtitle: "Real-Time Telehealth Platform",
+      description:
+        "A real-time telehealth application with Socket.IO for secure chat, WebRTC for video consultations, and Prisma ORM managing 10 data models with JWT authentication.",
+      tech: ["React 19", "TypeScript", "Node.js", "PostgreSQL", "Prisma ORM", "Socket.IO", "WebRTC", "JWT"],
       image: "/health-app.jpg",
       github: "https://github.com/jesser999/HealthyConnect",
-      live: "https://github.com/jesser999/HealthyConnect",
+      live: "https://healthyconnect-6779.vercel.app/",
     },
   ]
 
