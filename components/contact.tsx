@@ -227,24 +227,24 @@ export default function Contact() {
                   id="message"
                   value={formData.message}
                   onChange={(e) => {
-                    setFormData({ ...formData, message: e.target.value })
-                    if (validationErrors.message) {
-                      setValidationErrors({ ...validationErrors, message: "" })
+                    if (e.target.value.length <= 1000) {
+                      setFormData({ ...formData, message: e.target.value })
+                      if (validationErrors.message) {
+                        setValidationErrors({ ...validationErrors, message: "" })
+                      }
                     }
                   }}
                   rows={5}
                   className={`w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 transition-all resize-none ${
                     validationErrors.message ? "focus:ring-red-500" : "focus:ring-primary"
                   }`}
-                  placeholder="Your message (minimum 10 characters)..."
+                  placeholder="Your message..."
                   disabled={loading}
+                  maxLength={1000}
                 />
                 {validationErrors.message && (
                   <p className="text-sm text-red-400">{validationErrors.message}</p>
                 )}
-                <p className="text-xs text-muted-foreground">
-                  {formData.message.length}/10 characters minimum
-                </p>
               </div>
 
               {/* Submit Button with Loading Spinner */}
