@@ -14,7 +14,7 @@ const Navbar = ({ isDark = true, onToggleTheme }: NavbarProps) => {
 
   const handleDownloadCV = async () => {
     try {
-      const response = await fetch("/Cv-Jesser-Sakri-Updated.pdf")
+      const response = await fetch("/Cv-Jesser-Sakri-Latest.pdf")
       if (!response.ok) throw new Error("Failed to fetch CV")
       const blob = await response.blob()
       const url = window.URL.createObjectURL(blob)
