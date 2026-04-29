@@ -7,21 +7,39 @@ export default function Skills() {
   const [activeTab, setActiveTab] = useState("technical")
 
   const technicalSkills = [
+    // Frontend
+    { name: "React 19", icon: "⚛️" },
+    { name: "Next.js", icon: "▲" },
+    { name: "React Native", icon: "📱" },
+    { name: "Redux Toolkit", icon: "🔄" },
+    { name: "Tailwind CSS v4", icon: "🎨" },
+    { name: "Vite", icon: "⚡" },
+    // Languages & Core
     { name: "JavaScript (ES6+)", icon: "⚡" },
     { name: "TypeScript", icon: "📘" },
-    { name: "React.js", icon: "⚛️" },
-    { name: "React Native", icon: "📱" },
-    { name: "Next.js", icon: "▲" },
+    // Backend & Real-Time
     { name: "Node.js", icon: "🟢" },
-    { name: "Express.js", icon: "🚀" },
+    { name: "Express.js v5", icon: "🚀" },
+    { name: "Socket.IO", icon: "🔌" },
+    { name: "WebRTC", icon: "📹" },
+    // Database
+    { name: "PostgreSQL (Neon)", icon: "🐘" },
     { name: "MongoDB", icon: "🍃" },
     { name: "MySQL", icon: "🗄️" },
-    { name: "Redux Toolkit", icon: "🔄" },
-    { name: "Socket.IO", icon: "🔌" },
+    { name: "Redis", icon: "🔴" },
+    { name: "Prisma ORM", icon: "📊" },
+    // Security & APIs
+    { name: "JWT & HTTP-Only", icon: "🔐" },
+    { name: "Bcrypt", icon: "🛡️" },
+    { name: "Helmet.js", icon: "⚔️" },
     { name: "RESTful APIs", icon: "🌐" },
-    { name: "JWT Auth", icon: "🔐" },
-    { name: "HTML5/CSS3", icon: "🎨" },
     { name: "Stripe API", icon: "💳" },
+    // DevOps & Deployment
+    { name: "Docker", icon: "🐳" },
+    { name: "CI/CD Pipelines", icon: "🔄" },
+    { name: "Vercel", icon: "▲" },
+    { name: "Railway", icon: "🚄" },
+    { name: "Render", icon: "🎯" },
     { name: "Git/GitHub", icon: "🐙" },
   ]
 

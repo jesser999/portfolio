@@ -5,10 +5,20 @@ import { Github, ExternalLink } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "Quick Poll",
+      subtitle: "Real-Time Containerized Voting App",
+      description:
+        "Engineered microservices with Next.js 16 and Socket.io for real-time voting. Implemented Redis on Railway for high-performance state management and optimized Docker multi-stage builds for production deployment.",
+      tech: ["Next.js 16", "React", "TypeScript", "Express.js", "Socket.io", "Redis", "Docker", "Railway"],
+      image: "/quick-poll-screenshot.png",
+      github: "https://github.com/jesser999/quick-poll",
+      live: "https://quickpollapp-production-1c53.up.railway.app/",
+    },
+    {
       title: "TaskFlow",
       subtitle: "AI-Powered Smart Team Task Manager",
       description:
-        "An AI-powered project management platform for intelligent task automation and real-time collaboration.",
+        "Task priority prediction model built with PyTorch for intelligent automation. Integrated Stripe API for payments and implemented 2FA security alongside real-time Socket.io collaboration.",
       tech: ["React 19", "Node.js", "TypeScript", "MongoDB", "Redux Toolkit", "Socket.io", "Stripe", "PyTorch"],
       image: "/task-management-app.jpg",
       github: "https://github.com/jesser999/TaskFlow-AI-Smart-Team-TaskManager",
@@ -25,12 +35,13 @@ export default function Projects() {
     },
     {
       title: "HealthyConnect",
-      subtitle: "Real-Time Health Management Platform",
-      description: "A real-time health management platform with chat, authentication, and notifications.",
-      tech: ["ReactJS", "ExpressJS", "TypeScript", "MySQL", "Socket.IO"],
-      image: "/health-app.jpg",
+      subtitle: "Real-Time Telehealth Platform",
+      description:
+        "Secure video/chat via WebRTC and Socket.io for telemedicine. Managed serverless PostgreSQL on Neon with Prisma ORM for 10 data models. Hardened security with JWT (HTTP-only cookies) and Helmet.js.",
+      tech: ["React 19", "TypeScript", "Node.js", "PostgreSQL", "Prisma ORM", "Socket.IO", "WebRTC", "JWT"],
+      image: "/healthyconnect-screenshot.png",
       github: "https://github.com/jesser999/HealthyConnect",
-      live: "https://github.com/jesser999/HealthyConnect",
+      live: "https://healthyconnect-6779.vercel.app/",
     },
   ]
 

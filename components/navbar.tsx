@@ -20,7 +20,7 @@ const Navbar = ({ isDark = true, onToggleTheme }: NavbarProps) => {
       const url = window.URL.createObjectURL(blob)
       const link = document.createElement("a")
       link.href = url
-      link.download = "CV-JESSER-SAKRI.pdf"
+      link.download = "Cv Jesser Sakri.pdf"
       document.body.appendChild(link)
       link.click()
       link.parentNode?.removeChild(link)
