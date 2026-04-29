@@ -16,13 +16,17 @@ export default function Skills() {
     { name: "Express.js", icon: "🚀" },
     { name: "MongoDB", icon: "🍃" },
     { name: "MySQL", icon: "🗄️" },
-    { name: "Redux Toolkit", icon: "🔄" },
+    { name: "Redis", icon: "🔴" },
     { name: "Socket.IO", icon: "🔌" },
+    { name: "Docker", icon: "🐳" },
+    { name: "Redux Toolkit", icon: "🔄" },
     { name: "RESTful APIs", icon: "🌐" },
     { name: "JWT Auth", icon: "🔐" },
     { name: "HTML5/CSS3", icon: "🎨" },
     { name: "Stripe API", icon: "💳" },
     { name: "Git/GitHub", icon: "🐙" },
+    { name: "Conventional Commits", icon: "📝" },
+    { name: "DevOps", icon: "⚙️" },
   ]
 
   const softSkills = [
